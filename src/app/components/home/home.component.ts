@@ -46,4 +46,13 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  addNewTodo(newTodo:any) {
+    if (newTodo.value !== '') {
+      this.todo.push(newTodo.value);
+      newTodo.value = '';
+    }
+  }
+
+
+
 }

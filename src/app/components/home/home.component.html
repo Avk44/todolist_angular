@@ -10,9 +10,9 @@
       <div class="col-md-6">
         <form class="example-form">
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Voeg nieuwe taak toe" >
+            <input matInput placeholder="Voeg nieuwe taak toe" #newTodo >
           </mat-form-field>
-          <button mat-raised-button color="primary" type="submit">Voeg</button>
+          <button mat-raised-button color="primary" type="submit" (click)="addNewTodo(newTodo)">Voeg</button>
         </form>
       </div>
     </div>
