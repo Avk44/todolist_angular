@@ -9,6 +9,10 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import {MatButtonModule} from "@angular/material/button";
+import {MatInputModule} from "@angular/material/input";
+import {MatCardModule} from "@angular/material/card";
+import {DragDropModule} from "@angular/cdk/drag-drop";
 
 @NgModule({
   declarations: [
@@ -17,13 +21,17 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AboutComponent,
     NotFoundComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatSliderModule,
-    MatCheckboxModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatSliderModule,
+        MatCheckboxModule,
+        MatButtonModule,
+        MatInputModule,
+        MatCardModule,
+        DragDropModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
